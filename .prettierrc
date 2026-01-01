@@ -1,0 +1,43 @@
+{
+  "endOfLine": "lf",
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "printWidth": 100,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "plugins": ["prettier-plugin-astro"],
+  "overrides": [
+    {
+      "files": "*.ts,*.js, *.mjs",
+      "options": {}
+    },
+    {
+      "files": "*.html",
+      "options": {
+        "printWidth": 120,
+        "singleQuote": false
+      }
+    },
+    {
+      "files": "*.yaml,*.yml",
+      "options": {
+        "printWidth": 120,
+        "proseWrap": "preserve"
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {}
+    },
+    {
+      "files": "*.md,*.mdx",
+      "options": {}
+    },
+    {
+      "files": "*.toml",
+      "options": {}
+    }
+  ]
+}
